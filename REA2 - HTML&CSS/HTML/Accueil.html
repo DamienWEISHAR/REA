@@ -1,35 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="accueil.css">
+    <title>Manga 4 All</title>
 </head>
+
 <body>
     <header>
-    <!-- logo-->
         <div>
-            <img src="" alt="logo">
+            <li><a href="https://www.instagram.com/?hl=fr" target="_blank"><img src="../Images/600px-Instagram_icon.png"
+                        width="50px" alt="instagram"></a></li>
+            <li><a href="https://fr-fr.facebook.com/" target="_blank"><img
+                        src="../Images/facebook-icon-logo-C61047A9E7-seeklogo.com.png" width="50px"
+                        alt="facebook"></a></a></li>
         </div>
-    <!--barre de navigation-->
-        <div>
-            
-        </div> 
-    <!--en dessous-->
-    <!--barre de recherche-->
-        <div>
-            
+        <!-- logo-->
+        <div id="logo">
+            <img src="../Images/logo.jpg" alt="logo" width="850px" height="250px" alt="logo">
         </div>
-    <!--bouton de connexion-->
+        <!--bouton de connexion-->
         <div>
             <input type="button" value="S'inscrire">
             <input type="button" value="Se connecter">
         </div>
-    <!--bouton de langues-->
+        <!--bouton de langues-->
         <div>
+            <li><a href="../HTML/Accueil.html" target="_blank"><img src="../Images/logo_france.jpg" width="50px"
+                        height="40px"></a></li>
+            <li><a href="../HTML/Accueil.html" target="_blank"><img src="../Images/logo_english.jpg" width="50px"
+                        height="40px"></a></li>
+        </div>
+    </header>
+    <!--barre de navigation-->
+    <div>
+        <nav>
+            <ul id="barreNav">
+                <li><a href="">Séries</a>
+                    <ul class="sous_liste">
+                        <li>Bleach</li>
+                        <li>Dragon Ball</li>
+                        <li>My Hero Academia</li>
+                        <li>Naruto</li>
+                        <li>One Piece</li>
+                        <li>Saint Seiya</li>
+                    </ul>
+                </li>
+                <li><a href="">Auteurs</a>
+                    <ul class="sous_liste">
+                        <li>Akira Toriyama</li>
+                        <li>Eiichiro Oda</li>
+                        <li>Kôhei Horikoshi</li>
+                        <li>Masami Kurumada</li>
+                        <li>Masashi Kishimoto</li>
+                        <li>Tito Kubo</li>
+                    </ul>
+                </li>
+                <li><a href="">Editions</a>
+                    <ul class="sous_liste">
+                        <li><a href="https://www.glenat.com/" target="_blank">Glénat</a></li>
+                        <li><a href="https://www.kana.fr/" target="_blank"></a>Kana</li>
+                    </ul>
+                </li>
+                <li><a href="">Langues</a>
+                    <ul class="sous_liste">
+                        <li>Anglais</li>
+                        <li>Français</li>
+                        <li>Japonais</li>
+                    </ul></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--barre de recherche-->
+    <div id="barre_recherche">
+        <input type="search" id="barre_recherche" name="barre_recherche" placeholder="Rechercher">
+        <img src="../Images/loupe.png" alt="loupe" width="50px" height="50px">
+    </div>
+    <div>
+        <p>
+            Bienvenue sur le site de Manga4All, un lieu pour découvrir, rechercher, collectionner, spécialisé dans le
+            manga.
+        </p><br>
+        <p>
+            A votre tour de trouver le bonheur!
+        </p>
+    </div>
 
-        </div>   
-    </header>   
+    <div id="nouveautés">
+        <p>
+            Dernières nouveautés ajoutées:
+        </p>
+        <div>
+            <ul>
+                <li><img src="https://picsum.photos/200/300"> </li>
+                <li><img src="https://picsum.photos/200/300"> </li>
+                <li><img src="https://picsum.photos/200/300"> </li>
+                <li><img src="https://picsum.photos/200/300"> </li>
+                <li><img src="https://picsum.photos/200/300"> </li>
+                <li><img src="https://picsum.photos/200/300"> </li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
