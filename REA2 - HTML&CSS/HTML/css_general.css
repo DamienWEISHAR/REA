@@ -1,0 +1,44 @@
+header{
+    background-color: #1ebceb;
+    position: sticky;
+    top: 0px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+header #navigation, #connexion, #langue{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+nav ul{
+    display:flex;
+    flex-direction:row;
+    
+}
+nav ul li{
+   list-style:none;
+   display:flex;
+   justify-content: space-between;
+}
+
+#langue{
+    list-style: none;
+}
+article{
+    border:#0367a3 solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#container{
+    margin:150px;
+}
+#container article{
+    display:flex;
+    flex-direction:column;   
+}
+#container article img{
+    margin:auto;
+}
