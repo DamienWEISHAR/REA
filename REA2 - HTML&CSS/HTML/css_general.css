@@ -5,6 +5,7 @@ body, html{
 
 header{
     background-color: #1ebceb;
+    width: 100%;
     position: sticky;
     top: 0px;
     display:flex;
@@ -15,15 +16,21 @@ header{
 /*nav bar*/
 
 .nav {
-    background-color: palevioletred;
-    display: flex;
-    align-items: center;
   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    
     
 }
 li {
-    list-style: none;
     display: inline;
+    padding:50px;
+    list-style: none;
+    font-size: 30px;    
+
 }
 
 #momma {
