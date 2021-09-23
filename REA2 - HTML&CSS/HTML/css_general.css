@@ -1,30 +1,24 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
 header{
     background-color: #1ebceb;
     position: sticky;
     top: 0px;
     display:flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
-}
-header #navigation, #connexion, #langue{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-nav ul{
-    display:flex;
-    flex-direction:row;
-    
-}
-nav ul li{
-   list-style:none;
-   display:flex;
-   justify-content: space-between;
 }
 
-#langue{
-    list-style: none;
+/*nav bar*/
+nav{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+/* articles*/
+
 article{
     border:#0367a3 solid 2px;
     border-radius: 10px;
@@ -32,13 +26,45 @@ article{
     margin: 20px;
 }
 
-#container{
+.container{
     margin:150px;
 }
-#container article{
+.container article{
     display:flex;
-    flex-direction:column;   
+    flex-direction:column; 
+    align-items: center;
+    background-color: aqua;  
 }
-#container article img{
-    margin:auto;
+
+
+/* CSS Formulaire */
+
+
+form{
+    text-align: center;
+    font-size: 30px;
 }
+
+input{
+    border-radius: 25px;
+    width: 25%;
+    height:50px;
+}
+input:focus{
+    border: #eaaf65 solid 5px;
+    border-radius: 25px;
+}
+
+form>div{
+    margin:25px;
+}
+::placeholder{
+    text-align: center;
+}
+form>div:last-child>input{
+    background-color: #eaaf65;
+}
+form>div:last-child>input:hover{
+    background-color: #1ebceb;
+}
+
