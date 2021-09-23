@@ -8,16 +8,34 @@ header{
     position: sticky;
     top: 0px;
     display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /*nav bar*/
-nav{
-    display:flex;
-    justify-content: space-evenly;
+
+.nav {
+    background-color: palevioletred;
+    display: flex;
     align-items: center;
+  
+    
+}
+li {
+    list-style: none;
+    display: inline;
 }
 
+#momma {
+    background-color: orange;
+}
+
+#logo {
+    background-color: orange;
+}
 /* articles*/
+
+
 
 article{
     border:#0367a3 solid 2px;
