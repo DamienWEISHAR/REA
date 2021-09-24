@@ -10,7 +10,6 @@ header{
     top: 0px;
     display:flex;
     flex-direction: row;
-    
     background-color: beige;
     height: 15vh;
 }
@@ -18,12 +17,14 @@ header{
 /*nav bar*/
 header #logo{
     height:100%;
+    width:18rem;;
 }
 
 .nav {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .nav a li {
@@ -40,39 +41,35 @@ header #logo{
 }
 
 #momma{
+    display:flex;
+    flex: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;  
     justify-items: center;
-    
+        
 }
 
 #inscription{
     grid-column: 1;
     grid-row: 2;
-    
-   /* height:50%;*/
     margin: 10%;
 }
 
 #connexion{
     grid-column: 1;
     grid-row: 1;
-    
-   /* height:50%;*/
     margin: 10%;
 }
 #french {
     grid-column: 2;
     grid-row: 1;
-    /*height:50%;*/
     margin: 2%;
 }
 
 #english{
     grid-column: 2;
     grid-row: 2;
-    /*height:50%;*/
     margin: 2%;
 }
 
