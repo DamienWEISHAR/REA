@@ -11,20 +11,21 @@ header{
     display:flex;
     flex-direction: row;
     background-color: beige;
-    height: 15vh;
+    height: 16vh;
 }
 
 /*nav bar*/
 header #logo{
     height:100%;
-    width:18rem;;
+    width:25vw;
 }
 
 .nav {
+    background-color: lawngreen;
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    width: auto;
 }
 
 .nav a li {
@@ -41,12 +42,15 @@ header #logo{
 }
 
 #momma{
+    background-color: mediumpurple;
     display:flex;
     flex: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;  
     justify-items: center;
+    height:100%;
+    width:15vw;
         
 }
 
@@ -65,15 +69,29 @@ header #logo{
     grid-column: 2;
     grid-row: 1;
     margin: 2%;
+    padding: 2%;
 }
 
 #english{
     grid-column: 2;
     grid-row: 2;
     margin: 2%;
+    padding:2%
 }
 
+/* ---------------------------------------------------------------
+Barre de recherches
+-------------------------------------------------------------------*/
 
+.barre_recherche{
+    margin: auto;
+    text-align: center;
+  
+}
+.barre_recherche input {
+    height: 5vh;
+    width: 25vh;
+}
 
 
 /*
