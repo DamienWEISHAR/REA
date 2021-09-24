@@ -84,13 +84,15 @@ Barre de recherches
 -------------------------------------------------------------------*/
 
 .barre_recherche{
-    margin: auto;
-    text-align: center;
+   display: flex;
+   align-items: center; 
+   justify-content: center;
   
 }
 .barre_recherche input {
     height: 5vh;
-    width: 25vh;
+    width: 25vw;
+    text-align: center; 
 }
 
 
