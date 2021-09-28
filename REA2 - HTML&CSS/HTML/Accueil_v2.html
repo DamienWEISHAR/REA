@@ -12,9 +12,8 @@
 <body>
     <header>
 
-        <div class="logo">
-            <a href="../HTML/Accueil_v2.html"><img src="../Images/logo.jpg" alt="logo" width="100%"></a>
-        </div>
+        <a href="../HTML/Accueil_v2.html"><img id="logo" src="../Images/logo.jpg" alt="logo"></a>
+
         <div class="nav">
             <nav>
                 <a href="../HTML/Séries.html" target="_blank">
@@ -60,42 +59,44 @@
         </div>
         <!--bouton de connexion-->
         <div id="momma">
-            <div class="inscription">
-                <button>S'inscrire</button>
-                <button>Se connecter</button>
-            </div>
+            <button id="connexion">Se connecter</button>
+            <button id="inscription"><a href="../HTML/Inscription.html">S'inscrire</a></button>
 
-            <!--bouton de langues-->
 
-            <div class="langue1">
-                <button><a href="../HTML/Accueil.html" target="_blank"><img src="../Images/logo_france.jpg" width="50px"
-                            height="40px"></a></button>
-                <button><a href="../HTML/Accueil.html" target="_blank"><img src="../Images/logo_english.jpg"
-                            width="50px" height="40px"></a></button>
-            </div>
+            <!--bouton de langues
+            
+                Je dois rajouter la version anglaise
+            
+                -->
+
+            <button id="french"><a><img src="../Images/logo_france.jpg" width="50px" height="40px"></a></button>
+            <button id="english"><a><img src="../Images/logo_english.jpg" width="50px" height="40px"></a></button>
+        </div>
         </div>
     </header>
+
+
     <!--barre de recherche-->
-    <div id="barre_recherche">
+    <div class="barre_recherche">
         <input type="search" id="barre_recherche" name="barre_recherche" placeholder="Rechercher">
-        <img src="../Images/loupe.png" alt="loupe" width="50px" height="50px">
+        <button><img src="../Images/loupe.png" alt="loupe" width="50px" height="50px"></button>
+        <!--on click, go to the research results-->
     </div>
     <!--conteneur-->
-    <div>
-        <p>
-            Bienvenue sur le site de Manga4All, un lieu pour découvrir, rechercher, collectionner, spécialisé dans le
-            manga.
-        </p>
-        <p>
+    <div id="texte_accueil">
+        <img id="banniere" src="../Images/banniere.jpg" alt="banniere">
+        <p id="message_accueil">
+            Bienvenue sur le site de Manga4All, un lieu pour découvrir, rechercher, collectionner!
+        <br>
             A votre tour de trouver le bonheur!
         </p><br>
     </div>
-    <div id="nouveautés">
+    <div>
         <p>
             Dernières nouveautés ajoutées:
         </p>
         <div>
-            <ul>
+            <ul id="news">
                 <li><img src="https://picsum.photos/200/300"> </li>
                 <li><img src="https://picsum.photos/200/300"> </li>
                 <li><img src="https://picsum.photos/200/300"> </li>

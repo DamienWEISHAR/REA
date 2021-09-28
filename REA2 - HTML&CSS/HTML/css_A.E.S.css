@@ -1,7 +1,11 @@
+/*-------------------------------------------------
+Barre de navigation
+--------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
 body, html{
     margin: 0;
     padding: 0;
-
+    
 }
 
 header{
@@ -10,18 +14,18 @@ header{
     top: 0px;
     display:flex;
     flex-direction: row;
-    background-color: beige;
+    background-color:#fbaf53;
     height: 16vh;
+   font-family: 'Grechen Fuemen', cursive;
 }
 
-/*nav bar*/
 header #logo{
     height:100%;
     width:25vw;
 }
 
 .nav {
-    background-color: lawngreen;
+    background-color: #fbaf53;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +46,7 @@ header #logo{
 }
 
 #momma{
-    background-color: mediumpurple;
+    background-color:#fbaf53;
     display:flex;
     flex: auto;
     display: grid;
@@ -95,34 +99,9 @@ Barre de recherches
     text-align: center; 
 }
 
-
-/*
-#momma {
-    display: flex;
-    justify-self: flex-end;
-    justify-content: space-between;
-    align-content: space-around;
-}
-
-.langue1{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    justify-content:space-around ;
- 
-}
-
-.inscription{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-around;
-}   
-
-*/
-
-
-/* articles*/
+/*-----------------------------------------------------------------
+ Articles généraux
+ ------------------------------------------------------------------*/
 
 
 article{
@@ -139,7 +118,30 @@ article{
     display:flex;
     flex-direction:column; 
     align-items: center;
-    background-color: aqua;  
+    background-color: #1ebceb;  
 }
 
+/*--------------------------------------------------------------------
+séries
+-------------------------------------------------------------------*/
+#bleach, #db, #mha, #naruto, #op, #ss{
+    height:15vh;
+    width:25vw;
+}
 
+/*--------------------------------------------------------------------
+auteurs
+-------------------------------------------------------------------*/
+#t_k, #a_t, #k_h, #m_k, #e_o, #m_ku{
+    height:30vh;
+    width:15vw;
+}
+#profil{
+   display: grid;
+   grid-template-columns: 1fr 5fr;
+    background-color: coral;
+}
+#membre, #list{
+   justify-self: center;
+   align-self: center;
+}
