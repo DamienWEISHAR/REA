@@ -16,7 +16,7 @@ header{
     flex-direction: row;
     background-color:#fbaf53;
     height: 16vh;
-    
+        
 }
 
 header #logo{
@@ -30,6 +30,7 @@ header #logo{
     justify-content: center;
     align-items: center;
     width: auto;
+    
 }
 
 .nav a li {
