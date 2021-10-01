@@ -2,10 +2,11 @@
                     Barre de navigation
 --------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
-body, html{
+
+body{
     margin: 0;
     padding: 0;
-    background-color: rgba(30, 188, 235, 0.3);
+    background-color:#1ebceb;
 }
 
 header{
@@ -110,12 +111,13 @@ article{
 
 .container{
     margin:150px;
+    background-color: pink;
 }
 .container article{
     display:flex;
     flex-direction:column; 
     align-items: center;
-    background-color: white;  
+    background-color: white;
 }
 
 /*--------------------------------------------------------------------
@@ -154,7 +156,7 @@ article{
 #membre{ 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 #avatar_user{ 
     height: 15vh;
@@ -166,43 +168,63 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 #membre #icone_msg{
     grid-column: 2;
     grid-row: 1;
 }
+#note{
+    height:3vh;
+    width: 2vw;
+}
+#icone_commentaires:hover{
+
+}
+
 /* encarts centraux */
-#messagerie, #list{ 
+#messagerie{ 
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: repeat(2, 1fr);  
     height: 20%;    
     width: 50%;
 }
+#list{ 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);  
+    height: 20%;    
+    width: 50%;
+}
+
 
 /* dans l'encart #list et #messagerie */
 #title{
-    grid-column: 2;
+    grid-column: 2 /span 4;
+    grid-row: 1;
     justify-self: center;
 }
 
 #btn{
-    grid-column: 3;
+    grid-column: 5 /span 6;
     grid-row: 1;   
     justify-self: flex-end;
 }
 #tome, #img_user{    
-    height: 10vh;
-    width: 5vw;  
+    height: 15vh;
+    width: 8vw;  
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 2 /span 6;
     justify-self: center;
     align-self: center;     
 } 
-
-#infos, #msg{
-    grid-column: 2;
+#infos_user{
+    grid-column: 1 /span 2;
     grid-row: 2;
+    text-align: center;
+}
+#infos_tome, #msg{
+    grid-column: 2 /span 4;
+    grid-row: 2 /span 6;
     justify-self: center;
 }
