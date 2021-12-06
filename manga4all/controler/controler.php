@@ -1,13 +1,13 @@
 <?php
 
     //connexion à la BDD
-    include('./config/connect_manga4all.php');
+    include ('../config/connect.php');
     
     // ajout de la page de classe:
-    include('./model/utilisateur.php');
+    include ('../model/utilisateur.php');
     
     //ajout de la vue (page HTML)
-    include ('vue_manga4all.php');
+    include ('../vue/vue.php');
     
     
     

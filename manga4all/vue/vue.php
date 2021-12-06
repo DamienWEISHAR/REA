@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="inscription.css">
+    <link rel="stylesheet" href="inscription.css">
     <title>Manga4All</title>
 </head>
 
@@ -18,7 +18,8 @@
         <a href=""><img src="https://img.icons8.com/cute-clipart/64/000000/home.png"/></a>
     </div>
     <h1>PAGE D'INSCRIPTION</h1>
-    <form method="post" action="controler_manga4all.php">
+    <form id="vue
+    " action="" method="post" >
             
         <label for="util_pseudo">Pseudo</label>       
         <input type="text" name="util_pseudo" placeholder="Ex: pseudo">
