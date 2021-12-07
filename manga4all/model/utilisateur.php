@@ -1,5 +1,6 @@
 <?php
 
+
 /*------------------------------
 CREATION CLASS UTILISATEUR:
 -------------------------------*/
@@ -21,10 +22,13 @@ class Utilisateur{
         -------------------------------------------------------------*/
     
         // constructeur (pour obliger l'utilisateur à rentrer des données spécifiques)
-        /* public function __construct(){ // ATTENTION, il y a un double underscore avant construct !!!!!
-            $this->conn = new Database();
-            $this->conn = $this->conn->getConnection();
-        } */
+        // public function __construct(){ // ATTENTION, il y a un double underscore avant construct !!!!!
+        //     $this->conn = new Database();
+        //     $this->conn = $this->conn->getConnection();
+        // }
+        public function __construct(){
+
+        }
 
     /*------------------------------------------------------------
                             GETTERS & SETTERS
@@ -54,8 +58,6 @@ class Utilisateur{
             $this->util_email = $newUtil_email; 
         }
 
-         
-
         // Get & Set de l'attribut $util_mdp
         public function getUtil_mdp(){
             return $this->util_mdp;
@@ -67,17 +69,17 @@ class Utilisateur{
     /*------------------------------------------------------------
                            METHODES
         -------------------------------------------------------------*/
-        public function createUser (){
+        public function createUser ($bdd){
             try{
-                $bdd = new PDO('mysql:host=localhost;dbname=manga4all', 'root','', 
-                array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)); 
-                $req = $bdd->prepare('INSERT INTO utilisateurs (util_pseudo, util_email, util_mdp)
-                VALUES (:util_pseudo, :util_email, :util_email )');
+                
+                $req=$bdd->prepare('INSERT INTO utilisateurs (util_pseudo, util_email, util_mdp)
+                VALUES (:util_pseudo, :util_email, :util_mdp )');
                 $req->execute(array(
                     'util_pseudo' => $this->util_pseudo,
                     'util_email' => $this->util_email,
                     'util_mdp' => $this->util_mdp,                                                           
                 ));
+                
             }
             catch(Exception $e) { 
                 //affichage d'une exception en cas d’erreur
