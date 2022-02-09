@@ -48,7 +48,18 @@
                 
         </form>
     </section>
-    <p>Vous avez déjà un compte? Connectez-vous <a href="">ICI!</a> </p> <!-- Faire le lien pop-up pour la connexion-->
+                
+    <p>Vous avez déjà un compte? Connectez-vous <a href="" >ICI</a> </p>
+    <!-- Faire le lien pop-up pour la connexion-->
+    <button v-on:click = "popup_connexion()">ESSAI</button>
+    <container id="popup">
+        <form id="form_connexion" action="" method="POST">
+            <input type="text" name="util_pseudo" placeholder="Ex: pseudo" required><br>
+            <input type="password" name="util_mdp" minlength="3" maxlength="10" placeholder="Ex: P@ssWo4d" required><br>
+            <input  class="connect" type="submit" value="Se connecter">
+        </form>
+    </container> 
+    
 </body>
 
 </html>

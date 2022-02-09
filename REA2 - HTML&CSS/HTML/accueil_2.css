@@ -9,7 +9,7 @@ body, html{
 }
 
 header{
-    width: 100%;
+    width: 100vw;
     position: sticky;
     top: 0px;
     display:flex;
@@ -84,6 +84,88 @@ header #logo{
     padding:2%
 }
 
+@media only screen and (max-width:600px){
+    header{
+        display:flex;
+        flex-direction: column;         
+    }
+
+    header #logo{
+       display:none;
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .nav a li {
+        display: flex;
+        flex-direction: column;  
+        list-style: none;
+        font-size: 1.5em;    
+    }
+    
+    .nav li:hover {
+        background-color: none;
+       
+    }
+    
+    #momma{
+       
+        display:flex;
+        flex: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;  
+        justify-items: center;
+        height:100%;
+        width:15vw;
+            
+    }
+    
+    #inscription{
+        grid-column: 1;
+        grid-row: 2;
+        margin: 10%;
+    }
+    
+    #connexion{
+        grid-column: 1;
+        grid-row: 1;
+        margin: 10%;
+    }
+    #french {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 2%;
+        padding: 2%;
+    }
+    
+    #english{
+        grid-column: 2;
+        grid-row: 2;
+        margin: 2%;
+        padding:2%;
+    } 
+    
+    /* #logo{
+        display:none;
+    }
+    .nav{
+
+    }
+    .nav a li {
+    display: flex;
+    flex-direction: column;  
+    list-style: none;
+    font-size: 2em;     */
+}
+
+
+
 /* ---------------------------------------------------------------
 Barre de recherches
 -------------------------------------------------------------------*/
@@ -127,4 +209,11 @@ p, #message_accueil{
    display: flex;
    flex-direction: row;
    justify-content: space-around;
+}
+@media screen and (max-width:600px){
+    #logo{
+        display:none;
+    }
+
+
 }

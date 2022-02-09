@@ -76,7 +76,7 @@ form>div>p{
     font-size: 1rem;
     background-color: #eaaf65;
     border: #eaaf65 1px solid;
-    margin-bottom: 5rem;;
+    margin-bottom: 5rem;
 }
 .submit:hover{
     width:15vw;
@@ -84,7 +84,7 @@ form>div>p{
     background-color: #1ebceb;
     border: #1ebceb 1px solid;
     color:white;   
-    font-size:2rem; 
+    font-size:1rem; 
 }
 
 /* Vous avez déjà un compte?*/
@@ -92,5 +92,36 @@ p{
     text-align: center;
     font-size: 1rem;
 } 
+
+/*--------------------------------------------
+bouton pop up de connexion
+---------------------------------------------*/
+
+#popup{
+    display:block; 
+    visibility: visible;
+    background-color: seashell;
+    height:20vh;
+    width: 55vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.connect{
+    width: 15vw;
+    height: 5vh;
+    font-size: 1rem;
+    background-color: #eaaf65;
+    border: #eaaf65 1px solid;
+}
+
+#form_connexion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
